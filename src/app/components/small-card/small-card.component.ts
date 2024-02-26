@@ -6,6 +6,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./small-card.component.css']
 })
 export class SmallCardComponent {
+  @Input()
+  Id: string = "0"
 
   @Input()
   imgCover: string = ""
