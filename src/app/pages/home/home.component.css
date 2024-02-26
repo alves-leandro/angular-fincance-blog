@@ -1,14 +1,17 @@
 .container__articles {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-
+    grid-template-columns: 1fr;
     justify-content: center;
-    margin: 0 auto;
-
-    padding: 1rem;
+    gap: 2rem;
 }
 
 header {
     display: flex;
     justify-content: center;
+}
+
+@media screen and (min-width: 1020px) {
+    .container__articles {
+        grid-template-columns: 1fr 1fr;
+    }
 }
